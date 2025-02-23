@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Innovator777</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2025-02-23T20:56:00+09:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Mark Otto</name>
+   <email>markdotto@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>스프링 부트(Spring Boot)란 무엇인가?</title>
+   <link href="http://localhost:4000/spring%20boot/2025/02/22/what-is-spring-boot/"/>
+   <updated>2025-02-22T00:00:00+09:00</updated>
+   <id>http://localhost:4000/spring%20boot/2025/02/22/what-is-spring-boot</id>
+   <content type="html">&lt;p&gt;스프링 부트(Spring Boot)는 자바 기반의 웹 애플리케이션 개발을 더욱 쉽고 빠르게 만들어주는 프레임워크입니다. 기존 스프링 프레임워크의 복잡한 설정과 구성을 자동화하여, 개발자가 비즈니스 로직에 더 집중할 수 있도록 도와줍니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;스프링-부트의-주요-특징&quot;&gt;스프링 부트의 주요 특징&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-자동-구성auto-configuration&quot;&gt;1. 자동 구성(Auto Configuration)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;프로젝트에 필요한 다양한 설정을 자동으로 구성&lt;/li&gt;
+  &lt;li&gt;의존성만 추가하면 관련 설정이 자동으로 적용&lt;/li&gt;
+  &lt;li&gt;개발자의 설정 부담을 크게 줄여줌&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-내장-서버&quot;&gt;2. 내장 서버&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Tomcat, Jetty, Undertow 등의 서버가 내장되어 있음&lt;/li&gt;
+  &lt;li&gt;별도의 서버 설치나 설정 없이 즉시 실행 가능&lt;/li&gt;
+  &lt;li&gt;JAR 파일로 간단히 배포 가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-스타터-의존성starter-dependencies&quot;&gt;3. 스타터 의존성(Starter Dependencies)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;일반적인 개발에 필요한 의존성을 미리 정의&lt;/li&gt;
+  &lt;li&gt;예: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spring-boot-starter-web&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spring-boot-starter-data-jpa&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;호환성이 검증된 라이브러리 버전을 자동 관리&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-모니터링과-관리&quot;&gt;4. 모니터링과 관리&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Actuator를 통한 애플리케이션 모니터링&lt;/li&gt;
+  &lt;li&gt;상태 확인, 메트릭 수집, 로그 관리 등 제공&lt;/li&gt;
+  &lt;li&gt;운영 환경에서의 관리 용이성 제공&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;스프링-부트-vs-스프링-프레임워크&quot;&gt;스프링 부트 vs 스프링 프레임워크&lt;/h2&gt;
+
+&lt;h3 id=&quot;스프링-프레임워크&quot;&gt;스프링 프레임워크&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;많은 XML 설정이 필요&lt;/li&gt;
+  &lt;li&gt;의존성 버전 관리가 필요&lt;/li&gt;
+  &lt;li&gt;서버 설정과 배포가 복잡&lt;/li&gt;
+  &lt;li&gt;초기 설정에 많은 시간 소요&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;스프링-부트&quot;&gt;스프링 부트&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;최소한의 설정으로 시작 가능&lt;/li&gt;
+  &lt;li&gt;자동화된 의존성 버전 관리&lt;/li&gt;
+  &lt;li&gt;내장 서버로 간편한 배포&lt;/li&gt;
+  &lt;li&gt;빠른 프로젝트 시작과 개발&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;스프링-부트를-사용해야-하는-이유&quot;&gt;스프링 부트를 사용해야 하는 이유&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;생산성 향상&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;반복적인 설정 작업 감소&lt;/li&gt;
+      &lt;li&gt;빠른 프로젝트 초기화와 개발&lt;/li&gt;
+      &lt;li&gt;자동 구성으로 인한 오류 감소&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;표준화된 개발 환경&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;검증된 구성과 의존성 제공&lt;/li&gt;
+      &lt;li&gt;일관된 개발 환경 구성&lt;/li&gt;
+      &lt;li&gt;팀 프로젝트에서의 효율성 증가&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;운영의 편의성&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;모니터링 도구 내장&lt;/li&gt;
+      &lt;li&gt;손쉬운 배포와 확장&lt;/li&gt;
+      &lt;li&gt;클라우드 네이티브 지원&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;마치며&quot;&gt;마치며&lt;/h2&gt;
+
+&lt;p&gt;스프링 부트는 현대적인 자바 웹 개발에 있어 필수적인 도구가 되었습니다. 복잡한 설정에서 벗어나 비즈니스 로직에 집중할 수 있게 해주며, 개발부터 배포까지의 과정을 크게 단순화해줍니다. 다음 포스팅에서는 스프링 부트 프로젝트를 시작하기 위한 환경 설정 방법에 대해 알아보도록 하겠습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;참고-자료&quot;&gt;참고 자료&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot&quot;&gt;Spring Boot 공식 문서&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://start.spring.io&quot;&gt;Spring Initializr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+
+</feed>

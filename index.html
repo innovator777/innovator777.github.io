@@ -1,0 +1,82 @@
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post-preview">
+    <h2 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    <div class="post-excerpt">
+      {% if post.description %}
+        {{ post.description }}
+      {% else %}
+        {{ post.excerpt | strip_html | truncatewords: 50 }}
+      {% endif %}
+      <a href="{{ post.url | absolute_url }}" class="read-more">Read More &raquo;</a>
+    </div>
+  </div>
+  <hr class="post-divider">
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+
+<style>
+.post-preview {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  margin-bottom: 0.5rem;
+}
+
+.post-date {
+  display: block;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+.post-excerpt {
+  margin-top: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #268bd2;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.post-divider {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+</style>

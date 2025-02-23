@@ -1,0 +1,25 @@
+# Setup
+title:               Innovator777
+tagline:             '망각의 굴레'
+description:         '확신할 수 없다면, 그것은 아직 모르는 것이다.'
+url:                 https://innovator777.github.io
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# Timezone setting
+timezone: Asia/Seoul
+
+# About/contact
+author:
+  name:              innovator777
+  url:               https://github.com/innovator777
+  email:             innovato77@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.0.0
+google_analytics_id: #UA-XXXX-Y
