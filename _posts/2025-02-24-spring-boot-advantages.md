@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 스프링 부트(Spring Boot)의 장점과 특징
-date: 2025-02-26
+date: 2025-02-24
 categories: [Spring Boot]
 tags: [spring, spring boot, java, 프레임워크]
 ---
